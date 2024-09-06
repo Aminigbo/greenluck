@@ -1,0 +1,108 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-box {
+    background-color: #0f662d; /* Green background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+#input-row {
+    margin-bottom: 15px;
+    text-align: left;
+    display: block;
+}
+
+#input-row label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#input-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #e5e8ff;
+}
+
+#forgot-password {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.forgot-password a span {
+    color: #ff5f6d;
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5f6d; /* Pink button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff2d4d;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.register-link a {
+    color: #ff5f6d;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .login-box {
+        padding: 30px;
+    }
+
+    .input-row input {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}

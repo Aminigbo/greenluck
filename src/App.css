@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+  width: 100%;
+  background-color: #034203;
+  height: 10vh;
+}
+
+header nav{
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav img{
+  width: 100px;
+}
+
+header nav .bars{
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+header nav ul{
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero{
+  width: 100%;
+  background-image: url(Assets/bannerbg.jpeg);
+  height: 370px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .hh{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 58, 49, .7);
+}
+
+.hero .hh .h-c{
+  width: 80%;
+  margin: auto;
+}
+
+.hero .hh .h-c h1{
+  font-size: 52px;
+  width: 52%;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero .hh .h-c h1 span{
+  color: #d6ae3e;
+}
+
+.hero .hh .h-c p{
+  font-size: 15px;
+  color: #DCDCDC;
+  width: 60%;
+}
+
+.overlay{
+  width: 80%;
+  margin: auto;
+  /* background-color: #d6ae3e; */
+  /* padding: 20px 0; */
+  border-radius: 7px;
+  margin-top: -30px;
+}
+
+.overlay .o-v{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 200px; */
+}
+@media screen and (min-width: 950px){
+  #Carousel-img{
+    height: 400px; 
+  }
+
+  .overlay .o-v{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 200px; */
+  }
+  
+
+}
+
+
+ 
+
+.tips{
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.tips .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tips .top h2{
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: .4px;
+}
+
+.tips .top .btns{
+  display: flex;
+}
+
+.btns button{
+  background-color: #034203;
+  color: #DCDCDC;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 23px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#btns button{
+  background-color: orange;
+  color: #DCDCDC;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 23px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#btns button:hover{
+  background-color: palevioletred;
+}
+
+.tips .cards{
+  /* border: 1px solid #e5e5e5; */
+  border-radius: 10px;
+}
+
+.tips .cards .cards-c{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+
+}
+
+.tips .cards .cards-c .card{
+  width: 48.3%;
+  margin: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  border-radius: 20px;
+  /* cursor: pointer; */
+}
+
+.tips .cards .cards-c .card:hover{
+  /* box-shadow: 0 4px 8px #C1392A; */
+
+}
+
+.tips .cards .cards-c .card .card-c{
+  width: 92%;
+  margin: auto;
+}
+
+.tips .cards .cards-c .card .card-c .flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tips .cards .cards-c .card .card-c .first{
+  margin-bottom: 8px;
+
+}
+
+.tips .cards .cards-c .card .card-c .first button{
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 15px;
+  color:red;
+}
+.tips .cards .cards-c .card .card-c .first button span{
+  color: #000;
+}
+
+.tips .cards .cards-c .card .card-c .first button:first-child{
+  background-color: #034203;
+  color: #fff;
+}
+
+.tips .cards .cards-c .card .card-c .first button:first-child span{
+  color: #fff;
+}
+
+.tips .cards .cards-c .card .card-c .flex img{
+  width: 100px;
+}
+
+.tips .cards .cards-c .card .card-c .second{
+  margin-bottom: 10px;
+}
+.tips .cards .cards-c .card .card-c .flex .probs{
+  display: flex;
+  border-bottom: 1px solid #28a745;
+  margin: 0;
+  padding: 0;
+}
+
+.tips .cards .cards-c .card .card-c .flex .probs .s1{
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  padding: 1px 4px;
+  margin-bottom: 3px;
+  margin-right: 20px;
+}
+
+.tips .cards .cards-c .card .card-c .flex .probs span{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tips .cards .cards-c .card .card-c .flex .one{
+  display: flex;
+  align-items: center;
+}
+
+.tips .cards .cards-c .card .card-c .flex .one .one1{
+  margin-right: 15px;
+  background-color: #e0e0e0;
+  border-radius: 1px;
+  font-size: 13px;
+  padding: 2px 0;
+  width: 30px;
+  
+}
+.tips .cards .cards-c .card .card-c .flex .one .one1 p{
+  display: flex;
+  justify-content: center;
+}
+
+.tips .cards .cards-c .card .card-c .flex .one .one2 p{
+  font-size: 14px;
+}
+
+.tips .cards .cards-c .card .card-c .flex .two .rows{
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.tips .cards .cards-c .card .card-c .flex .two .rows span{
+  background-color: #C1392A;
+  color: #3d3d3d;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.tips .join{
+  border-top: 1px solid #e5e5e5;
+}
+
+.tips .join .j-c{
+  width: 95%;
+  padding: 50px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tips .join .j-c .ff{
+  color: #007bff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.tips .join .j-c .ff .t-i{
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+
+.tips .join .other a{
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #C1392A;
+  border-radius: 30px;
+}
+
+.tips .join .other a:first-child{
+  background-color: #28a745;
+  margin-right: 15px;
+}
+
+.tips .join .other a button{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+
+.article{
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.article h2{
+  font-size: 36px;
+  font-weight: 600;
+}
+.article .sports{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.article .sports .sport{
+  width: 31%;
+  text-align: center;
+  border: 1px solid #777777;
+  border-radius: 8px;
+  padding: 6px 0;
+}
+
+.article .sports .sport img{
+  width: 97%;
+  border-radius: 8px 8px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.article .sports .sport .txt{
+  width: 70%;
+  margin: auto;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.article .sports .sport .txt h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.article .sports .sport .txt button{
+  border: 1px solid #3d3d3d;
+  padding: 15px 30px;
+  border-radius: 40px;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.predict-cards{
+  background-color: #F3F3F3;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.predict-cards .predict-c{
+  width: 80%;
+  margin: auto;
+}
+
+.predict-cards .predict-c h3{
+  font-weight: 600;
+  font-size: 30px;
+}
+.predict-cards .predict-c .p-c{
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.predict-cards .predict-c .p-c button{
+  width: 22%;
+  background-color: #000;
+  border: none;
+  height: 95px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.prediction{
+  width: 93%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.prediction h4{
+  color: #C1392A;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.prediction p{
+  font-size: 15px;
+}
+
+.prediction p span{
+  color: #007bff;
+}
+
+.prediction ul{
+  width: 95%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.prediction ul li{
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+.prediction ul li a{
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer{
+  width: 100%;
+  padding: 40px 0;
+  background-color: #052424;
+}
+
+footer .foot{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .foot .foot1{
+  width: 20%;
+}
+
+footer .foot .foot1:nth-child(3){
+  width: 28%;
+}
+
+footer .foot .foot1 h4{
+  color: #28a745;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+footer .foot .foot1 ul{
+  list-style: none;
+}
+
+footer .foot .foot1 ul li{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+footer .foot .foot1 ul li a{
+  color: #9fa3a7;
+  text-decoration: none;
+}
+
+footer .foot .foot1 .icons{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+footer .foot .foot1 .icons a{
+  font-size: 17px;
+  color: #fff;
+  margin-right: 10px;
+
+}
+
+footer .foot .foot1 p{
+  font-size: 15px;
+  color: #9fa3a7;
+  margin-bottom: 10px;
+}
+
+footer .foot .foot1 img{
+  font-size: 100px;
+}
+
+footer .right{
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid #9fa3a7;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+footer .right p{
+  font-size: 17px;
+  color: #9fa3a7;
+}
+
+@media screen and (max-width: 950px) {
+  header nav ul{
+    width: 80%;
+  }
+  .hero .hh .h-c{
+    width: 90%;
+  }
+  .overlay{
+    width: 90%;
+
+  }
+
+  .tips{
+    width: 90%;
+  }
+
+  .article{
+    width: 90%;
+  }
+  .article .sports .sport .txt{
+    width: 90%;
+  }
+
+  .predict-cards .predict-c .p-c button{
+    width: 30%;
+  }
+
+  .predict-cards .predict-c{
+    width: 90%;
+  }
+
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+ 
+
+  header nav ul{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    left: 0;
+    background-color: #fff;
+    top: 10vh;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    padding: 5vh 0;
+    left: -100%;
+    z-index: 1000;
+    
+  }
+
+  header nav ul li{
+    font-size: 20px;
+  }
+
+  header nav ul li a{
+    color: #034203;
+  }
+
+  header nav .active{
+    left: 0;
+  }
+
+  header nav .bars{
+    display: flex;
+  }
+
+  .hero .hh .h-c h1{
+    font-size: 40px;
+    width: 70%;
+  }
+
+  .tips .top h2{
+    font-size: 23px;
+  }
+
+  .tips .cards .cards-c .card{
+    width: 100%;
+  }
+
+  .tips .join .j-c{
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .tips .join .j-c .ff{
+    margin-bottom: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 700px){
+  .article .sports .sport{
+    width: 47%;
+    margin-bottom: 20px;
+  }
+
+  footer .foot{
+    flex-wrap: wrap;
+  }
+
+  footer .foot .foot1{
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .hero .hh .h-c h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .hero .hh .h-c p{
+    width: 100%;
+  }
+  .tips .top{
+    flex-direction: column;
+    align-items: start;
+  }
+  .tips .top h2{
+    margin-bottom: 20px;
+  }
+
+  .article .sports .sport{
+    width: 100%;
+  }
+  .tips .join .other a button{
+    font-size: 15px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 500px){
+  .predict-cards .predict-c .p-c button{
+    width: 48%;
+  }
+
+  
+}
+
+@media screen and (max-width: 450px){
+  .tips .cards .cards-c .card .card-c .rolling{
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: -6px;
+
+  }
+  .tips .cards .cards-c .card .card-c .flex .one{
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 400px){
+  .hero .hh .h-c h1{
+    font-size: 26px;
+  }
+  .tips .join .other{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tips .join .other a{
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+  .prediction h4{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .tips .cards .cards-c .card .card-c .flex{
+    flex-direction: column;
+    align-items: start;
+  }
+  .tips .cards .cards-c .card .card-c .first button{
+    margin-bottom: 10px;
+  }
+  .tips .cards .cards-c .card .card-c .flex img{
+    margin-bottom: 12px;
+  }
+  .predict-cards .predict-c .p-c button{
+    width: 100%;
+  }
+
+  .predict-cards .predict-c h3{
+    font-size: 24px;
+  }
+
+  footer .foot .foot1{
+    width: 100%;
+  }
+}
