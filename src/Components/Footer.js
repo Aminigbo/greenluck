@@ -26,10 +26,10 @@ const Footer = () => {
                 <div className="foot1">
                     <h4>Information</h4>
                     <ul>
-                        <li><a href="">TERMS & CONDITIONS</a></li>
-                        <li><a href="">DISCLAIMER</a></li>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">Refund Policy</a></li>
+                        <li><a href="/privacy">TERMS & CONDITIONS</a></li>
+                        <li><a href="/disclaimer">DISCLAIMER</a></li>
+                        <li><a href="/about">ABOUT US</a></li>
+                        <li><a href="/refund">Refund Policy</a></li>
                         <li><a href="">Privacy Policy</a></li>
                     </ul>
                 </div>

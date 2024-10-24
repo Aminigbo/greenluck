@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import logo from '../Assets/logo (1).webp'
+import logo from '../Assets/greenluckLogoWhite.png'
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { auth } from '../config/firebase';
@@ -51,14 +51,10 @@ const Header = ({ isAuth, setIsAuth }) => {
                     </div>
 
                     <ul className={click ? 'menu active' : 'menu'}>
-                        <li><Link>Home</Link></li>
-                        <li><Link>Prediction Stores</Link></li>
-                        {/* <li><Link>Links 1</Link></li>
-                    <li><Link>Links 2</Link></li>
-                    <li><Link>Links 3</Link></li>
-                    <li><Link>Links 4</Link></li> */}
-                        <li><Link>Links 5</Link></li>
-                        <li><Link>Other Sports</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/privacy" >Privacy Policy</Link></li>
+                        <li><Link to="/disclaimer">Discliamer</Link></li>
+                        <li><Link to="/about" >About us</Link></li>
 
                         <div id="btns">
                             {isAuth ? <>

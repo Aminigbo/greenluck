@@ -9,16 +9,19 @@ import Footer from '../Components/Footer'
 import { auth, db } from '../config/firebase'
 import { doc, getDoc } from 'firebase/firestore'
 
+import { getDocs, collection } from 'firebase/firestore';
+
 const Home = () => {
   const [userData, setUserData] = React.useState()
   const [isAuth, setIsAuth] = React.useState(false)
   const [loading, setloading] = React.useState(false)
   const [games, setGames] = React.useState([])
+  const [banners, setbanners] = React.useState([])
   const [code, setCode] = React.useState("")
 
   const fetchUser = async () => {
     auth.onAuthStateChanged(async (user) => {
-      console.log("====", user)
+      // console.log("====", user)
 
       if (user) {
         setloading(true)
@@ -31,7 +34,7 @@ const Home = () => {
           setloading(false)
         } else {
           setloading(false)
-          console.log("User not logged in")
+          // console.log("User not logged in")
           setIsAuth(false)
         }
       } else {
@@ -43,11 +46,11 @@ const Home = () => {
 
   const fetchPredictions = async () => {
     setloading(true)
-    const docRef = doc(db, "free", "efg6LV6IbZIVf3HmwiLX")
+    const docRef = doc(db, "premium", "TWElIvPfSuKlnRSQoQF6")
     const docSnap = await getDoc(docRef)
 
     if (docSnap.exists()) {
-      console.log(docSnap.data())
+      // console.log(docSnap.data())
       setGames(docSnap.data().games)
       setCode(docSnap.data().code)
       setloading(false)
@@ -58,15 +61,31 @@ const Home = () => {
     }
   }
 
+  function getAllDocuments() {
+    const query = collection(db, 'banners');
+    getDocs(query).then((querySnapshot) => {
+      const documents = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      // console.log(documents);
+      setbanners(documents)
+    }).catch((error) => {
+      console.error(error);
+      setbanners([])
+    });
+
+  }
+
+
+
   React.useEffect(() => {
     fetchUser()
     fetchPredictions()
+    getAllDocuments()
   }, [])
   return (
     <div>
       {console.log(games)}
       <Header isAuth={isAuth} setIsAuth={setIsAuth} />
-      <Hero />
+      <Hero banners={banners} />
       <Tips loading={loading} games={games} code={code} />
       {/* <Sport/> */}
       {/* <Picks/> */}

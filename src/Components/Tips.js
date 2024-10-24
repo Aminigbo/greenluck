@@ -134,7 +134,8 @@ const Tips = ({
 
     return (
         <div>
-             <ToastContainer
+            {console.log(games)}
+            <ToastContainer
                 position="top-right"
                 hideProgressBar={false}
                 newestOnTop={false}
@@ -163,7 +164,7 @@ const Tips = ({
                     <div className="cards-c">
 
                         {
-                            games.map((item, id) => {
+                            games.length > 0 && games.map((item, id) => {
                                 // Your timestamp
                                 const timestamp = item.estimateStartTime;
 
@@ -192,7 +193,7 @@ const Tips = ({
                                 // Combine into the desired time format
                                 const formattedTime = `${hours}:${minutes} ${ampm}`;
 
-                                console.log(code)
+                                // console.log(code)
                                 return (
                                     <div className="card" key={id}>
 
@@ -247,6 +248,14 @@ const Tips = ({
                                     </div>
                                 )
                             })
+                            // : <>
+
+                            // <div style={{
+                            //     backgroundColor:"green"
+                            // }}>
+                            //     <h2>Bet Of The Day</h2>
+                            // </div>
+                            // </>
                         }
 
                     </div>
@@ -271,7 +280,16 @@ const Tips = ({
 
                 </div>
 
+                {games.length < 1 &&
 
+                    <center>
+                        <b style={{
+                            color: "crimson",
+                            padding: 30,
+                            borderRadius: 8
+                        }}>Bet Of The Day</b>
+                    </center>
+                }
 
 
             </div>
